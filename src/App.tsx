@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import UserList from "./components/UserList";
+import CompanyList from "./components/CompanyList";
+import {SelectedComp} from "./context";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [selectedValues, setSelectedValues] = useState<number[]>([])
+
+    return (
+        <div className="App">
+            <div style={{display: 'flex'}}>
+                <SelectedComp.Provider value={{
+                    selectedValues,
+                    setSelectedValues
+                }}>
+                    <UserList/>
+                <CompanyList/>
+                </SelectedComp.Provider>
+            </div>
+        </div>
+    );
 }
 
 export default App;
