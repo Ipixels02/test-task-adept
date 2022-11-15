@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.company__list {
+    width: 100%;
+    padding: 20px;
+}
+
+.user__list {
+    width: 100%;
+    padding: 20px;
+}
+
+.user {
+    padding: 20px;
+    border: 1px solid orange;
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.company {
+    padding: 10px;
+    border: 1px solid deeppink;
+    margin-top: 15px;
+    width: 100%;
+    display: inline-table;
+    justify-content: space-between;
+}
+
+.company_item {
+    padding: 10px;
+    border: 1px solid green;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.company_item:hover {
+    background: deepskyblue;
+}
+
+.myBtn {
+    padding: 5px 15px;
+    color: teal;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+.delBtn {
+    padding: 5px 15px;
+    color: white;
+    font-size: 14px;
+    background: crimson;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.myInput {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 5px 0;
+    border: 2px solid teal;
+}
+
+.cmpny_btns {
+    display: flex;
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+}
