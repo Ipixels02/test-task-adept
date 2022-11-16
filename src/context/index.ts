@@ -1,9 +1,5 @@
 import {createContext, useContext} from "react";
 
-// export interface ITodo {
-//     id: number | null;
-// }
-
 export interface IContext {
     selectedValues: number[]
     setSelectedValues:(ar: number[]) => void

@@ -21,7 +21,6 @@ const CompanyList = () => {
 
     const handleRemove = (company: ICompany) => {
         deleteCompany(company)
-        console.log(company)
     }
 
     const handleUpdate = (company: ICompany) => {
